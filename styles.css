@@ -1,0 +1,211 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f4f8;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start; /* Change to flex-start to align to the top */
+  min-height: 100vh; /* Ensure full height of viewport */
+  color: #333;
+}
+
+/* Main Container */
+.app-container {
+  width: 80%; /* Allow it to take up 80% of the screen width */
+  max-width: 1200px; /* Keep the max-width */
+  background-color: #fff;
+  padding: 2.5rem 3.5rem; /* Padding for spaciousness */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15); /* Deeper shadow for a card effect */
+  margin: 2rem auto; /* Centering */
+}
+
+/* Headings */
+h1 {
+  text-align: center;
+  font-size: 32px; /* Increased font size for header */
+  color: #0077cc;
+  margin-bottom: 1rem; /* Added bottom margin */
+}
+
+h2 {
+  font-size: 24px; /* Increased font size for section headers */
+  margin-bottom: 15px; /* Increased bottom margin */
+  color: #333;
+}
+
+/* Section Styling */
+.form-section, .resume-display {
+  margin-top: 40px; /* Increased margin for more space */
+  padding: 1.5rem; /* Padding for sections */
+  border-radius: 8px; /* Rounded corners */
+  background-color: #f9f9f9; /* Light background for sections */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1); /* Soft shadow for sections */
+}
+
+.input-group {
+  margin-bottom: 20px; /* Increased margin for better spacing */
+}
+
+label {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 8px; /* Increased margin for better spacing */
+}
+
+input {
+  width: 100%;
+  padding: 12px; /* Increased padding */
+  margin-bottom: 12px; /* Increased bottom margin */
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input:focus {
+  border-color: #0077cc;
+  outline: none;
+}
+
+/* Button Styling */
+button {
+  padding: 12px; /* Increased button padding */
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.submit-button {
+  background-color: #0077cc;
+  color: white;
+  width: 100%;
+  font-size: 1.1rem; /* Larger font size for better readability */
+}
+
+.toggle-button {
+  background-color: #333;
+  color: white;
+  margin-top: 10px;
+  width: 100%;
+  font-size: 1.1rem; /* Larger font size for better readability */
+}
+
+.toggle-button:hover, .submit-button:hover {
+  background-color: #005f99;
+}
+
+.resume-display h2 {
+  color: #0077cc;
+  margin-bottom: 10px; /* Added margin for spacing */
+}
+
+.resume-display h3 {
+  font-size: 22px; /* Increased font size */
+  margin-top: 15px; /* Increased margin */
+  color: #555;
+}
+
+/* Header - Personal Information Section */
+.header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.header img {
+  width: 140px; /* Increased profile picture size */
+  height: 140px; /* Increased profile picture size */
+  border-radius: 50%;
+  margin-right: 2rem; /* Increased margin */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.header h1 {
+  font-size: 2.5rem; /* Increased font size for main header */
+}
+
+.header h2 {
+  font-size: 1.5rem; /* Increased font size for subheader */
+  color: #777;
+  margin-top: 0.5rem;
+}
+
+.header p {
+  font-size: 1rem; /* Increased font size */
+  color: #555;
+}
+
+/* Section Titles */
+section h3 {
+  font-size: 1.8rem; /* Increased section title size */
+  color: #444;
+  margin-bottom: 1.5rem; /* Increased bottom margin */
+  border-bottom: 2px solid #d1d1d1;
+  padding-bottom: 0.5rem;
+  margin-top: 2rem; /* Increased top margin */
+}
+
+/* Education, Skills, Work Experience Sections */
+section div {
+  margin-bottom: 1.5rem;
+}
+
+section div h4 {
+  font-size: 1.5rem; /* Increased font size */
+  color: #333;
+  margin-bottom: 0.5rem;
+}
+
+section div p, section div ul li {
+  font-size: 1rem; /* Increased font size */
+  color: #555;
+  line-height: 1.6;
+}
+
+.skills {
+  list-style-type: none;
+  padding-left: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.skills li {
+  background-color: #e0e7ff;
+  color: #4f46e5;
+  padding: 0.7rem 1.5rem; /* Increased padding */
+  border-radius: 16px;
+  margin: 0.5rem; /* Increased margin */
+  font-size: 1rem; /* Increased font size */
+  font-weight: 600;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .app-container {
+      padding: 1rem; /* Decrease padding for smaller screens */
+  }
+
+  .header {
+      flex-direction: column;
+      align-items: center;
+      text-align: center;
+  }
+
+  .header img {
+      margin-right: 0;
+      margin-bottom: 1rem;
+  }
+
+  .skills {
+      justify-content: center;
+  }
+}

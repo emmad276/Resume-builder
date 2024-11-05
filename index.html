@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Professional Resume Builder</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <h1>Resume Builder</h1>
+
+    <!-- Input Form for Resume Data -->
+    <div class="form-section">
+      <h2>Enter Your Details</h2>
+      
+      <!-- Personal Information -->
+      <div class="input-group">
+        <label for="name">Name:</label>
+        <input type="text" id="name" placeholder="Your full name">
+        
+        <label for="contact">Contact:</label>
+        <input type="text" id="contact" placeholder="Phone number or email">
+      </div>
+
+      <!-- Education -->
+      <div class="input-group">
+        <label for="education">Education:</label>
+        <input type="text" id="education" placeholder="Degree, Institution, Years">
+      </div>
+
+      <!-- Skills -->
+      <div class="input-group">
+        <label for="skills">Skills (comma-separated):</label>
+        <input type="text" id="skills" placeholder="e.g., JavaScript, TypeScript, React">
+        <button id="toggleSkillsButton" class="toggle-button">Toggle Skills</button>
+      </div>
+
+      <!-- Work Experience -->
+      <div class="input-group">
+        <label for="experience">Work Experience:</label>
+        <input type="text" id="experience" placeholder="Position, Company, Years">
+      </div>
+
+      <button id="generateResumeButton" class="submit-button">Generate Resume</button>
+    </div>
+
+    <!-- Display Resume -->
+    <div id="resumeDisplay" class="resume-display">
+      <h2>Generated Resume</h2>
+
+      <section id="resumePersonalInfo">
+        <h3>Personal Information</h3>
+        <p id="displayName"></p>
+        <p id="displayContact"></p>
+      </section>
+
+      <section id="resumeEducation">
+        <h3>Education</h3>
+        <p id="displayEducation"></p>
+      </section>
+
+      <section id="resumeSkills">
+        <h3>Skills</h3>
+        <ul id="displaySkills"></ul>
+      </section>
+
+      <section id="resumeExperience">
+        <h3>Work Experience</h3>
+        <p id="displayExperience"></p>
+      </section>
+    </div>
+  </div>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
